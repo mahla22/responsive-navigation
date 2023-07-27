@@ -3,19 +3,17 @@
     margin: 0;
     padding: 0;
 }
-
-
 nav {
     width: 100%;
     height: 100px;
     position: fixed;
 
 }
-ul {
+nav ul {
     list-style-type: none;
     position: relative;
 }
-li {
+nav li {
     display: inline-block;
     margin: 30px 0px 0px 35px;
 }
@@ -35,10 +33,64 @@ i {
 #news img{
     width: 1270px;
     height: 100vh;
-
 }
-#articles {
-    width: 100%;
-    max-height: 100vh;
+#cellphones {
+    font-size: 1.7em;
+    font-weight: bolder;
+    position: relative;
+    cursor: pointer;
 }
-
+#cellphones:hover{
+    color: #f08017;
+}
+.dropDown {
+    width: 160px;
+    height: 242px;
+    background-color: #f08017;
+    border: 1px solid white;
+    box-shadow: 2px 2px 2px 2px #6b6a6a;
+    position: absolute;
+    display: none;
+}
+#cellphones:hover .dropDown {
+    display: block;
+}
+.dropDownContent{
+    width: 160px;
+    height: 60px;
+    border: 1px solid white;
+    text-align: center;
+    display: block;
+}   
+.dropDownContent :hover {
+    color: #060606;
+    background-color: #fc9637;
+}
+.dropDownContent a {
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+    display: block;
+    padding: 15px;
+}
+@media only screen and (min-width:768px ) {
+    nav ,li {
+        display: inline-block;
+        margin: 30px 0px 0px 35px;
+    }
+       
+    }
+@media only screen and (min-width:600px ) {
+li {
+    display: block;
+    width: 600px;
+    height: 100px;
+   }
+}
+@media only screen and (min-width:320px ) {
+    li {
+        display: block;
+        width: 300px;
+        height: 50px;
+       }
+    }
